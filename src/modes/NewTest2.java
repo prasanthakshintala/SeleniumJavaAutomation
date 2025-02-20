@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest2 {
 	WebDriver driver;
-@Test(enabled=false)
+@Test(enabled=true)
 public void idnameclassnamecssselector() 
 {
 driver.get("https://www.techlearn.in/admin");
