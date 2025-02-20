@@ -11,7 +11,7 @@ public class GitHubDemo {
   @Test
   public void techlearnlogin() {
 	  driver.get("https://www.techlearn.in/admin");
-	  driver.findElement(By.xpath("//*[@id=\"user_login\"]")).sendKeys("prashanth");
+	  driver.findElement(By.xpath("//*[@name=\"log\"]")).sendKeys("prashanth");
   }
   @BeforeTest
   public void beforeTest() {
