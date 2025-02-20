@@ -1,6 +1,7 @@
 package prashanth;
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
@@ -10,6 +11,7 @@ public class GitHubDemo {
   @Test
   public void techlearnlogin() {
 	  driver.get("https://www.techlearn.in/admin");
+	  driver.findElement(By.xpath("//*[@id=\"user_login\"]")).sendKeys("prashanth");
   }
   @BeforeTest
   public void beforeTest() {
