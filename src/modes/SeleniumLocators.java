@@ -9,9 +9,10 @@ public class SeleniumLocators {
 
 	public static void main(String[] args) {
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	
 	 driver.get("https://www.techlearn.in");
-	 driver.findElement(By.xpath("/html/body/nav/div/div/ul/li[6]/a")).click();
+	 driver.findElement(By.xpath("//*[@xpath='About Us']")).click();
 		
 		
 		
